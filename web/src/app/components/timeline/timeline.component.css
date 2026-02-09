@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.timeline-item {
+  position: relative;
+  will-change: transform, opacity;
+}
+
+.parallax-card {
+  will-change: transform;
+}

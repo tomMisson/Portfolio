@@ -1,0 +1,25 @@
+<div class="space-y-8">
+  <h3 class="text-2xl font-bold italic px-2">Certifications</h3>
+  <div class="grid gap-4">
+    @for (cert of linkedinService.certifications(); track cert.name) {
+      <div class="cert-item p-4 rounded-2xl bg-zinc-50/50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 flex items-center gap-4 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center shrink-0 overflow-hidden">
+          @if (cert.logo) {
+            <img [src]="cert.logo" [alt]="cert.issuer" class="w-full h-full object-contain p-2" />
+          } @else {
+            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-2.583 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946 2.583 3.42 3.42 0 013.132 3.132 3.42 3.42 0 002.583 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-2.583 1.946 3.42 3.42 0 01-3.132 3.132 3.42 3.42 0 00-1.946 2.583 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-2.583 3.42 3.42 0 01-3.132-3.132 3.42 3.42 0 00-2.583-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 002.583-1.946 3.42 3.42 0 013.132-3.132z"></path></svg>
+          }
+        </div>
+        <div class="flex-1 min-w-0">
+          <h4 class="font-bold text-zinc-900 dark:text-zinc-100 truncate">{{ cert.name }}</h4>
+          <p class="text-sm text-zinc-500">{{ cert.issuer }} • {{ cert.date }}</p>
+        </div>
+        @if (cert.url) {
+          <a [href]="cert.url" target="_blank" class="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-400 hover:text-blue-600" title="View Certificate">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        }
+      </div>
+    }
+  </div>
+</div>

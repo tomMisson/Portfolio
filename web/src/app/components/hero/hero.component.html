@@ -1,0 +1,63 @@
+<section class="relative min-h-[90vh] h-screen md:h-auto flex flex-col-reverse items-center justify-between gap-8 py-12 md:flex-row md:py-24 overflow-hidden">
+  
+  <!-- Euclidean Particle Network Background -->
+  <canvas #networkCanvas class="absolute inset-0 z-0 w-full h-full pointer-events-none"></canvas>
+
+  <!-- Content - Added pb-20 on mobile to clear the chevron -->
+  <div #content class="relative flex flex-col items-center gap-6 text-center md:items-start md:text-left z-10 w-full md:w-auto pb-20 md:pb-0">
+    <div class="flex flex-col gap-2">
+      <h1 class="hero-text text-4xl font-bold tracking-tight sm:text-7xl opacity-0">
+        {{ 'HERO.GREETING' | translate }} <span class="text-amber-500">{{ 'HERO.NAME' | translate }}</span>
+      </h1>
+      <p class="hero-text text-xl font-medium text-zinc-600 dark:text-zinc-400 sm:text-2xl opacity-0">
+        {{ 'HERO.ROLE' | translate }}
+      </p>
+    </div>
+    
+    <p class="hero-text max-w-prose text-lg text-zinc-600 dark:text-zinc-400 opacity-0 px-4 md:px-0">
+      {{ 'HERO.DESCRIPTION' | translate }}
+    </p>
+
+    <!-- Buttons: Horizontal Scroll on Mobile -->
+    <div class="hero-text w-full opacity-0">
+      <div class="flex flex-row gap-4 overflow-x-auto pb-4 px-4 mx-4 -mx-4 md:mx-0 md:px-0 md:pb-0 md:w-auto no-scrollbar snap-x">
+        <a
+          href="https://docs.google.com/document/d/1Kqr4zAkT3qddC5qceM1zHs8fDvMlOnNuGzAasCxdM9c/export?format=pdf"
+          download="TomMisson_CV.pdf"
+          class="group relative flex h-12 items-center justify-center shrink-0 overflow-hidden rounded-full bg-zinc-900 px-8 text-sm font-medium text-white transition-all hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200 snap-center"
+        >
+          <span class="relative z-10">{{ 'HERO.DOWNLOAD_CV' | translate }}</span>
+        </a>
+        <a
+          href="#projects"
+          class="flex h-12 items-center justify-center shrink-0 rounded-full border border-zinc-300 bg-white/50 backdrop-blur-sm px-8 text-sm font-medium transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900/50 dark:hover:bg-zinc-800 snap-center"
+        >
+          {{ 'HERO.VIEW_PROJECTS' | translate }}
+        </a>
+        <a
+          href="#contact"
+          class="flex h-12 items-center justify-center shrink-0 rounded-full border border-zinc-300 bg-white/50 backdrop-blur-sm px-8 text-sm font-medium transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900/50 dark:hover:bg-zinc-800 snap-center"
+        >
+          {{ 'HERO.CONTACT_ME' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Avatar -->
+  <div #avatar 
+    class="hero-avatar relative z-10 h-48 w-48 shrink-0 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl md:h-96 md:w-96 opacity-0 bg-cover bg-center">
+  </div>
+
+  <!-- Scroll Down Chevron -->
+  <a 
+    #scrollChevron
+    href="#journey" 
+    class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 p-2 text-zinc-400 hover:text-amber-500 transition-colors opacity-0"
+    aria-label="Scroll to Journey"
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+</section>

@@ -1,0 +1,37 @@
+{
+  "HERO": {
+    "GREETING": "Hi, I'm",
+    "NAME": "Tom",
+    "ROLE": "Software Engineer & IoT Enthusiast",
+    "DESCRIPTION": "Full Stack Dev building high-performance, enterprise-grade applications. C# / Angular / React ",
+    "VIEW_PROJECTS": "View Projects",
+    "CONTACT_ME": "Contact Me",
+    "DOWNLOAD_CV": "Download CV"
+  },
+  "PROJECTS": {
+    "TITLE": "Featured Projects",
+    "SUBTITLE": "A collection of my latest work, automatically synced from GitHub."
+  },
+  "TIMELINE": {
+    "TITLE": "My Journey",
+    "EXPERIENCE": {
+      "TC": {
+        "ROLE": "Senior Software Engineer",
+        "COMPANY": "Travel Counsellors",
+        "PERIOD": "2024 - Present",
+        "DESC": "Leading frontend development using Angular and modern web technologies to build scalable travel platforms."
+      }
+    },
+    "SKILLS": {
+      "TITLE": "Expertise",
+      "LIST": [".NET Core", "C#", "ASP.NET", "Blazor", "TypeScript", "Angular", "React", "Terraform", "Tailwind CSS"]
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Let's Connect",
+    "SUBTITLE": "I'm always open to discussing new roles, projects, or opportunities."
+  },
+  "FOOTER": {
+    "BUILT_WITH": "Built with Gemini and other pixy technologies"
+  }
+}

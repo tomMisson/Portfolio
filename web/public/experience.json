@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Travel Counsellors",
+    "role": "Software Engineer",
+    "period": "Jan 2025 - Present",
+    "description": "Contributing to the shift towards an event driven distributed architecture. Building scalable and resilient systems to support the global travel industry.",
+    "location": "Manchester, UK",
+    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHmNPdIZfY-Rg/company-logo_100_100/company-logo_100_100/0/1688380498612/travel_counsellors_logo?e=1772064000&v=beta&t=Kp2DvKl7IV7m89K8tzhlr0-RodKhuTbrkWXUn64SHIM"
+  },
+  {
+    "company": "AB InBev",
+    "role": "Technical Lead - Atom Group",
+    "period": "Jan 2023 - Jan 2025",
+    "description": "Re-architected, delivered and maintained business-critical fulfillment systems. Focused on operational stability and efficiency.",
+    "location": "Manchester, UK (Remote)",
+    "logo": "https://media.licdn.com/dms/image/v2/C560BAQEZRSga0FreWA/company-logo_100_100/company-logo_100_100/0/1656631574816/ab_inbev_logo?e=1772064000&v=beta&t=KlLy5u8464HesO0nr3RpMuOw358LDovJcVg0txpF05U"
+  },
+  {
+    "company": "AB InBev",
+    "role": "Software Engineer - Atom Group",
+    "period": "Jun 2021 - Ju 2025",
+    "description": "Built streamlined checkout experiences and leveraged Google Analytics to gain insights into user behavior and optimize conversion rates.",
+    "location": "Manchester, UK (Remote)",
+    "logo": "https://media.licdn.com/dms/image/v2/C560BAQEZRSga0FreWA/company-logo_100_100/company-logo_100_100/0/1656631574816/ab_inbev_logo?e=1772064000&v=beta&t=KlLy5u8464HesO0nr3RpMuOw358LDovJcVg0txpF05U"
+  }
+]
