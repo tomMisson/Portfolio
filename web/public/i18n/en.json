@@ -10,7 +10,8 @@
   },
   "PROJECTS": {
     "TITLE": "Featured Projects",
-    "SUBTITLE": "A collection of my latest work, automatically synced from GitHub."
+    "SUBTITLE": "A collection of my latest work, automatically synced from GitHub.",
+    "updated_at": "Updated {{ date }}"
   },
   "TIMELINE": {
     "TITLE": "My Journey",
