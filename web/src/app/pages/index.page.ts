@@ -5,45 +5,53 @@ import { TimelineComponent } from '../components/timeline/timeline.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouteMeta } from '@analogjs/router';
+import en from '../../../public/i18n/en.json';
+
+// Function to resolve metadata based on language (defaults to 'en')
+const getMetadata = (lang: string = 'en') => {
+  // In a multi-lang setup, we would switch on 'lang' here
+  const resources = { en };
+  return resources.en.META;
+};
 
 export const routeMeta: RouteMeta = {
-  title: 'Tom Misson | Senior Software Engineer',
+  title: getMetadata().TITLE,
   meta: [
     {
       name: 'description',
-      content: 'Software Engineer specializing in .NET C#, Angular, React and IoT. Check out my projects and professional journey.',
+      content: getMetadata().DESCRIPTION,
     },
     {
       name: 'author',
-      content: 'Tom Misson',
+      content: getMetadata().AUTHOR,
     },
     {
       name: 'keywords',
-      content: 'Senior Software Engineer, Software Developer, .NET Developer, TypeScript, Automation, Portfolio, Manchester',
+      content: getMetadata().KEYWORDS,
     },
     {
       name: 'robots',
-      content: 'index, follow',
+      content: getMetadata().ROBOTS,
     },
     {
       name: 'theme-color',
-      content: '#ff9800',
+      content: getMetadata().THEME_COLOR,
     },
     {
       property: 'og:title',
-      content: 'Tom Misson | Senior Software Engineer',
+      content: getMetadata().OG_TITLE,
     },
     {
       property: 'og:description',
-      content: 'Senior Software Engineer specializing in Angular, .NET, and automation. Check out my projects and professional journey.',
+      content: getMetadata().OG_DESCRIPTION,
     },
     {
       property: 'og:image',
-      content: '/profile.jpg',
+      content: getMetadata().OG_IMAGE,
     },
     {
       name: 'twitter:card',
-      content: 'summary_large_image',
+      content: getMetadata().TWITTER_CARD,
     },
   ],
 };

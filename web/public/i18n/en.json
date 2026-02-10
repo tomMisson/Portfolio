@@ -1,4 +1,16 @@
 {
+  "META": {
+    "TITLE": "Tom Misson | Software Engineer",
+    "DESCRIPTION": "Software Engineer specializing in .NET C#, Angular, React and IoT. Check out my projects and professional journey.",
+    "AUTHOR": "Tom Misson",
+    "KEYWORDS": "Senior Software Engineer, Software Developer, .NET Developer, TypeScript, Automation, Portfolio, Manchester",
+    "ROBOTS": "index, follow",
+    "THEME_COLOR": "#ff9800",
+    "OG_TITLE": "Tom Misson | Senior Software Engineer",
+    "OG_DESCRIPTION": "Senior Software Engineer specializing in Angular, .NET, and automation. Check out my projects and professional journey.",
+    "OG_IMAGE": "/profile.jpg",
+    "TWITTER_CARD": "summary_large_image"
+  },
   "HERO": {
     "GREETING": "Hi, I'm",
     "NAME": "Tom",
