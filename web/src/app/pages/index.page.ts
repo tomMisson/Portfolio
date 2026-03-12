@@ -34,24 +34,26 @@ const getMetadata = (lang: string = 'en'): MetaConfig => {
   return resources.en.META as MetaConfig;
 };
 
+const meta = getMetadata();
+
 export const routeMeta: RouteMeta = {
-  title: getMetadata().TITLE,
+  title: meta.TITLE,
   meta: [
-    { name: 'description',        content: getMetadata().DESCRIPTION },
-    { name: 'author',             content: getMetadata().AUTHOR },
-    { name: 'keywords',           content: getMetadata().KEYWORDS },
-    { name: 'robots',             content: getMetadata().ROBOTS },
-    { name: 'theme-color',        content: getMetadata().THEME_COLOR },
-    { property: 'og:title',       content: getMetadata().OG_TITLE },
-    { property: 'og:description', content: getMetadata().OG_DESCRIPTION },
-    { property: 'og:image',       content: getMetadata().OG_IMAGE },
-    { property: 'og:url',         content: getMetadata().OG_URL },
-    { property: 'og:type',        content: getMetadata().OG_TYPE },
-    { property: 'og:site_name',   content: getMetadata().OG_SITE_NAME },
-    { name: 'twitter:card',       content: getMetadata().TWITTER_CARD },
-    { name: 'twitter:title',      content: getMetadata().TWITTER_TITLE },
-    { name: 'twitter:description', content: getMetadata().TWITTER_DESCRIPTION },
-    { name: 'twitter:image',      content: getMetadata().TWITTER_IMAGE },
+    { name: 'description',         content: meta.DESCRIPTION },
+    { name: 'author',              content: meta.AUTHOR },
+    { name: 'keywords',            content: meta.KEYWORDS },
+    { name: 'robots',              content: meta.ROBOTS },
+    { name: 'theme-color',         content: meta.THEME_COLOR },
+    { property: 'og:title',        content: meta.OG_TITLE },
+    { property: 'og:description',  content: meta.OG_DESCRIPTION },
+    { property: 'og:image',        content: meta.OG_IMAGE },
+    { property: 'og:url',          content: meta.OG_URL },
+    { property: 'og:type',         content: meta.OG_TYPE },
+    { property: 'og:site_name',    content: meta.OG_SITE_NAME },
+    { name: 'twitter:card',        content: meta.TWITTER_CARD },
+    { name: 'twitter:title',       content: meta.TWITTER_TITLE },
+    { name: 'twitter:description', content: meta.TWITTER_DESCRIPTION },
+    { name: 'twitter:image',       content: meta.TWITTER_IMAGE },
   ],
 };
 

@@ -18,6 +18,8 @@ export class TimelineComponent implements AfterViewInit {
   public linkedinService = inject(LinkedInService);
   @ViewChild('journey') journeySection!: ElementRef;
 
+  get now(): Date { return new Date(); }
+
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger);
     
