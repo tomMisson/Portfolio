@@ -7,6 +7,10 @@
   will-change: transform, opacity;
 }
 
-.parallax-card {
-  will-change: transform;
+.skills-card {
+  will-change: transform, opacity;
+}
+
+.skill-pill {
+  will-change: transform, opacity;
 }

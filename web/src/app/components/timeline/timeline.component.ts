@@ -27,28 +27,66 @@ export class TimelineComponent implements AfterViewInit {
   }
 
   private initTimelineAnimations() {
-    gsap.to('.timeline-item', {
-      scrollTrigger: {
-        trigger: '#journey',
-        start: 'top 85%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: 'power3.out'
+    // Each timeline item gets its own trigger so they fire individually on scroll
+    gsap.utils.toArray<HTMLElement>('.timeline-item').forEach((item) => {
+      gsap.fromTo(item,
+        { opacity: 0, x: 20 },
+        {
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 88%',
+            toggleActions: 'play none none reverse',
+          },
+          opacity: 1,
+          x: 0,
+          duration: 0.6,
+          ease: 'power3.out',
+        }
+      );
     });
+
+    // Skills card fades up
+    gsap.fromTo('.skills-card',
+      { opacity: 0, y: 24 },
+      {
+        scrollTrigger: {
+          trigger: '.skills-card',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse',
+        },
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+      }
+    );
+
+    // Skill pills stagger in after the card appears
+    gsap.fromTo('.skill-pill',
+      { opacity: 0, scale: 0.75 },
+      {
+        scrollTrigger: {
+          trigger: '.skills-card',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse',
+        },
+        opacity: 1,
+        scale: 1,
+        duration: 0.25,
+        stagger: 0.04,
+        ease: 'back.out(1.4)',
+      }
+    );
 
     gsap.to('.parallax-card', {
       scrollTrigger: {
         trigger: '.parallax-card',
         start: 'top bottom',
         end: 'bottom top',
-        scrub: true
+        scrub: true,
       },
       y: -80,
-      ease: 'none'
+      ease: 'none',
     });
   }
 }
