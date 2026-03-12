@@ -7,7 +7,7 @@
 }
 
 .hero-avatar {
-  background-image: url('/profile.jpg');
+  background-image: url('/images/profile.jpg');
 }
 
 @keyframes pulse {
