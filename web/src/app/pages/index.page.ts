@@ -21,6 +21,7 @@ export const routeMeta: RouteMeta = {
     { property: 'og:url',          content: SEO.SITE_URL },
     { property: 'og:type',         content: SEO.OG_TYPE },
     { property: 'og:site_name',    content: SEO.SITE_NAME },
+    { property: 'og:logo',         content: SEO.OG_LOGO },
     { name: 'twitter:card',        content: SEO.TWITTER_CARD },
     { name: 'twitter:title',       content: SEO.TITLE },
     { name: 'twitter:description', content: SEO.DESCRIPTION },

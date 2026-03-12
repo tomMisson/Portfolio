@@ -44,6 +44,41 @@ function generateSitemapXml(): string {
   ].join('\n');
 }
 
+function patchIndexHtml(root: string): void {
+  const indexPath = resolve(root, 'index.html');
+  let html = readFileSync(indexPath, 'utf-8');
+
+  const tags = [
+    `<meta name="description" content="${SEO.DESCRIPTION}" />`,
+    `<meta property="og:type"        content="${SEO.OG_TYPE}" />`,
+    `<meta property="og:title"       content="${SEO.TITLE}" />`,
+    `<meta property="og:description" content="${SEO.DESCRIPTION}" />`,
+    `<meta property="og:image"       content="${SEO.OG_IMAGE}" />`,
+    `<meta property="og:logo"        content="${SEO.OG_LOGO}" />`,
+    `<meta property="og:url"         content="${SEO.SITE_URL}" />`,
+    `<meta property="og:site_name"   content="${SEO.SITE_NAME}" />`,
+    `<meta name="twitter:card"       content="${SEO.TWITTER_CARD}" />`,
+    `<meta name="twitter:title"      content="${SEO.TITLE}" />`,
+    `<meta name="twitter:description" content="${SEO.DESCRIPTION}" />`,
+    `<meta name="twitter:image"      content="${SEO.OG_IMAGE}" />`,
+    `<link rel="canonical" href="${SEO.SITE_URL}" />`,
+  ].join('\n    ');
+
+  // Replace the block between the sentinel comments (idempotent)
+  const START = '<!-- seo:start -->';
+  const END   = '<!-- seo:end -->';
+  const block = `${START}\n    ${tags}\n    ${END}`;
+
+  if (html.includes(START)) {
+    html = html.replace(new RegExp(`${START}[\\s\\S]*?${END}`), block);
+  } else {
+    // First run: insert before </head>
+    html = html.replace('</head>', `  ${block}\n  </head>`);
+  }
+
+  writeFileSync(indexPath, html);
+}
+
 function generateLlmsTxt(experience: Experience[], certs: Certification[], skills: string[]): string {
   const experienceLines = experience.map(
     e => `- ${e.company} — ${e.role} (${e.period}) — ${e.description}`,
@@ -105,8 +140,9 @@ export function generateSeoFiles(): Plugin {
       writeFileSync(resolve(pub, 'robots.txt'),  generateRobotsTxt());
       writeFileSync(resolve(pub, 'sitemap.xml'), generateSitemapXml());
       writeFileSync(resolve(pub, 'llms.txt'),    generateLlmsTxt(experience, certs, skills));
+      patchIndexHtml(config.root);
 
-      config.logger.info('  ✓ robots.txt, sitemap.xml, llms.txt generated from seo.config.ts');
+      config.logger.info('  ✓ robots.txt, sitemap.xml, llms.txt, index.html meta tags generated from seo.config.ts');
     },
   };
 }

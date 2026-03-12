@@ -13,6 +13,7 @@ export const SEO = {
   OG_TYPE:      'website',
   TWITTER_CARD: 'summary_large_image',
   OG_IMAGE:     `${SITE_URL}/images/profile.jpg`,
+  OG_LOGO:      `${SITE_URL}/images/profile.jpg`,
 
   // Social
   LINKEDIN_URL: 'https://www.linkedin.com/in/tommisson/',
