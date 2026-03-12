@@ -4,7 +4,7 @@
 
 ## About
 
-Tom Misson is a Software Engineer with experience building enterprise-grade, full-stack applications across the travel, e-commerce, and IoT sectors.
+Software Engineer with experience building enterprise-grade, full-stack applications across the travel, e-commerce, and IoT sectors.
 
 - [Portfolio](https://tommisson.uk/)
 - [LinkedIn](https://www.linkedin.com/in/tommisson/)
@@ -12,9 +12,9 @@ Tom Misson is a Software Engineer with experience building enterprise-grade, ful
 
 ## Experience
 
-- Travel Counsellors — Software Engineer (Jan 2025–Present) — Contributing to a shift towards event-driven distributed architecture. Building scalable and resilient systems for the global travel industry.
-- AB InBev / Atom Group — Technical Lead (Jan 2023–Jan 2025) — Re-architected and maintained business-critical fulfilment systems. Focused on operational stability and efficiency.
-- AB InBev / Atom Group — Software Engineer (Jun 2021–Jan 2023) — Built streamlined checkout experiences and leveraged Google Analytics to optimise conversion rates.
+- Travel Counsellors — Software Engineer (Jan 2025 - Present) — Contributing to the shift towards an event driven distributed architecture. Building scalable and resilient systems to support the global travel industry.
+- AB InBev — Technical Lead - Atom Group (Jan 2023 - Jan 2025) — Re-architected, delivered and maintained business-critical fulfillment systems. Focused on operational stability and efficiency.
+- AB InBev — Software Engineer - Atom Group (Jun 2021 - Jan 2023) — Built streamlined checkout experiences and leveraged Google Analytics to gain insights into user behavior and optimize conversion rates.
 
 ## Education
 
@@ -26,6 +26,6 @@ Tom Misson is a Software Engineer with experience building enterprise-grade, ful
 
 ## Certifications
 
-- Claude Code in Action — Anthropic (2026)
 - Claude 101 — Anthropic (Feb 2026)
+- Claude Code in Action — Anthropic (Jan 2026)
 - WSET Level 3 Diploma in Spirits — University of Nottingham (March 2023)

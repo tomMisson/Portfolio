@@ -3,6 +3,7 @@
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
 import tailwindcss from '@tailwindcss/vite';
+import { generateSeoFiles } from './vite-plugins/generate-seo-files';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mainFields: ['module'],
   },
   plugins: [
+    generateSeoFiles(),
     analog({
       ssr: false,
       static: true,
@@ -20,6 +22,6 @@ export default defineConfig(({ mode }) => ({
         routes: ['/'],
       },
     }),
-    tailwindcss()
+    tailwindcss(),
   ],
 }));
