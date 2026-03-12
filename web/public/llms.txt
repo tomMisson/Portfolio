@@ -7,7 +7,7 @@
 Tom Misson is a Software Engineer with experience building enterprise-grade, full-stack applications across the travel, e-commerce, and IoT sectors.
 
 - [Portfolio](https://tommisson.uk/)
-- [LinkedIn](https://www.linkedin.com/in/thomasmisson/)
+- [LinkedIn](https://www.linkedin.com/in/tommisson/)
 - [GitHub](https://github.com/tomMisson)
 
 ## Experience
