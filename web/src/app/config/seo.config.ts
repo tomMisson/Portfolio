@@ -11,7 +11,7 @@ export const SEO = {
   ROBOTS:       'index, follow',
   THEME_COLOR:  '#ff9800',
   OG_TYPE:      'website',
-  TWITTER_CARD: 'summary_large_image',
+  TWITTER_CARD: 'summary',
   OG_IMAGE:     `${SITE_URL}/images/profile.jpg`,
   OG_LOGO:      `${SITE_URL}/images/profile.jpg`,
 
