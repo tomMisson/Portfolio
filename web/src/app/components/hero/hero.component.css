@@ -6,10 +6,6 @@
   animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.hero-avatar {
-  background-image: url('/profile.jpg');
-}
-
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);

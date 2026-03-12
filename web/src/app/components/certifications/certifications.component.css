@@ -1,3 +1,7 @@
 :host {
   display: block;
 }
+
+.cert-item {
+  transform: translateY(1rem);
+}

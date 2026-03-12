@@ -1,21 +1,28 @@
 [
   {
+    "name": "Claude 101",
+    "issuer": "Anthropic",
+    "date": "Feb 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
+    "url": "https://verify.skilljar.com/c/5d9oo4eqxr7t"
+  },
+  {
     "name": "Claude Code in Action",
     "issuer": "Anthropic",
-    "date": "2026",
-    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFMhKgeR7EYAg/company-logo_100_100/company-logo_100_100/0/1719256989269/anthropicresearch_logo?e=1772064000&v=beta&t=6g7WflvbdT6NHf5MbFwIdticRPr0AhNllZrVRrvLRQY",
+    "date": "Jan 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
     "url": "https://verify.skilljar.com/c/99qqxx4dimqm"
   },
   {
-    "name": "WSET Level 3 Diploma in Spirts",
+    "name": "WSET Level 3 Diploma in Spirits",
     "issuer": "University of Nottingham",
     "date": "March 2023",
-    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFvzaeOhFMO4g/company-logo_100_100/company-logo_100_100/0/1667324341044/wsetglobal_logo?e=1772064000&v=beta&t=eYU6ZSl5sLqYujFNr7mhkAYnqZ-hNStViWrtircHyEU"
+    "logo": "/images/certs/wsetglobal_logo.jpg"
   },
   {
     "name": "BSc (Hons) Software Engineering",
     "issuer": "Manchester Metropolitan University",
     "date": "June 2021",
-    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHZd34jC26VCA/company-logo_100_100/B4EZUdv13oGgAY-/0/1739960835981/manchester_metropolitan_university_logo?e=1772064000&v=beta&t=mhdihvPATVJwQ_2PIofHMz3UdwUDf0l7L2CLBaCq_6A"
+    "logo": "/images/certs/manchester_metropolitan_university_logo.jpg"
   }
 ]

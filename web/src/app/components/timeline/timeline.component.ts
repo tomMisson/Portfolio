@@ -5,17 +5,20 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { LinkedInService } from '../../services/linkedin.service';
 import { CertificationsComponent } from '../certifications/certifications.component';
+import { EmploymentDurationPipe } from '../../pipes/employment-duration.pipe';
 
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [CommonModule, TranslateModule, CertificationsComponent],
+  imports: [CommonModule, TranslateModule, CertificationsComponent, EmploymentDurationPipe],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css'
 })
 export class TimelineComponent implements AfterViewInit {
   public linkedinService = inject(LinkedInService);
   @ViewChild('journey') journeySection!: ElementRef;
+
+  get now(): Date { return new Date(); }
 
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger);

@@ -1,0 +1,31 @@
+# Tom Misson — Portfolio
+
+> Software Engineer specialising in .NET, Angular, TypeScript, and event-driven distributed architecture. Based in Manchester, UK.
+
+## About
+
+Tom Misson is a Software Engineer with experience building enterprise-grade, full-stack applications across the travel, e-commerce, and IoT sectors.
+
+- [Portfolio](https://tommisson.uk/)
+- [LinkedIn](https://www.linkedin.com/in/thomasmisson/)
+- [GitHub](https://github.com/tomMisson)
+
+## Experience
+
+- Travel Counsellors — Software Engineer (Jan 2025–Present) — Contributing to a shift towards event-driven distributed architecture. Building scalable and resilient systems for the global travel industry.
+- AB InBev / Atom Group — Technical Lead (Jan 2023–Jan 2025) — Re-architected and maintained business-critical fulfilment systems. Focused on operational stability and efficiency.
+- AB InBev / Atom Group — Software Engineer (Jun 2021–Jan 2023) — Built streamlined checkout experiences and leveraged Google Analytics to optimise conversion rates.
+
+## Education
+
+- BSc (Hons) Software Engineering — Manchester Metropolitan University (June 2021)
+
+## Skills
+
+.NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, React, Terraform, Tailwind CSS, SCSS
+
+## Certifications
+
+- Claude Code in Action — Anthropic (2026)
+- Claude 101 — Anthropic (Feb 2026)
+- WSET Level 3 Diploma in Spirits — University of Nottingham (March 2023)
