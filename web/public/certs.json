@@ -1,5 +1,19 @@
 [
   {
+    "name": "Introduction to agent skills",
+    "issuer": "Anthropic",
+    "date": "Jul 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
+    "url": "https://verify.skilljar.com/c/5miohqrrm8vc"
+  },
+  {
+    "name": "Introduction to subagents",
+    "issuer": "Anthropic",
+    "date": "Jul 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
+    "url": "https://verify.skilljar.com/c/59n4f87f7d8y"
+  },
+  {
     "name": "Claude 101",
     "issuer": "Anthropic",
     "date": "Feb 2026",

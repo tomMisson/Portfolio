@@ -22,10 +22,12 @@ Software Engineer with experience building enterprise-grade, full-stack applicat
 
 ## Skills
 
-.NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, React, Terraform, Tailwind CSS, SCSS
+Agentic development, .NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, React, Terraform, Tailwind CSS, SCSS
 
 ## Certifications
 
+- Introduction to agent skills — Anthropic (Jul 2026)
+- Introduction to subagents — Anthropic (Jul 2026)
 - Claude 101 — Anthropic (Feb 2026)
 - Claude Code in Action — Anthropic (Jan 2026)
 - WSET Level 3 Diploma in Spirits — University of Nottingham (March 2023)
