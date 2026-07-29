@@ -2,6 +2,22 @@
   display: block;
 }
 
-.cert-item {
+.cert-group {
   transform: translateY(1rem);
+}
+
+.cert-chevron {
+  transition: transform 0.3s ease;
+}
+
+.cert-group.is-open .cert-chevron {
+  transform: rotate(180deg);
+}
+
+.cert-group-body {
+  border-top-color: transparent;
+}
+
+.cert-group.is-open .cert-group-body {
+  border-top-color: inherit;
 }

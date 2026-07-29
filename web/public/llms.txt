@@ -32,4 +32,4 @@ Generative AI, Agentic AI, .NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, 
 - Introduction to subagents — Anthropic (Jul 2026)
 - Claude 101 — Anthropic (Feb 2026)
 - Claude Code in Action — Anthropic (Jan 2026)
-- WSET Level 3 Diploma in Spirits — University of Nottingham (March 2023)
+- WSET Level 3 Diploma in Spirits — Wine & Spirit Education Trust (March 2023)
