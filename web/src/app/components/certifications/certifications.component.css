@@ -2,6 +2,18 @@
   display: block;
 }
 
-.cert-item {
+.cert-group {
   transform: translateY(1rem);
+}
+
+.cert-group[open] .cert-chevron {
+  transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::marker {
+  display: none;
 }
