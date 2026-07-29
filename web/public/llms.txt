@@ -22,10 +22,12 @@ Software Engineer with experience building enterprise-grade, full-stack applicat
 
 ## Skills
 
-Agentic development, .NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, React, Terraform, Tailwind CSS, SCSS
+Generative AI, Agentic AI, .NET Core, C#, ASP.NET, Blazor, TypeScript, Angular, React, Terraform, Tailwind CSS, SCSS
 
 ## Certifications
 
+- AI Capabilities and Limitations — Anthropic (Jul 2026)
+- AI Fluency for Builders — Anthropic (Jul 2026)
 - Introduction to agent skills — Anthropic (Jul 2026)
 - Introduction to subagents — Anthropic (Jul 2026)
 - Claude 101 — Anthropic (Feb 2026)

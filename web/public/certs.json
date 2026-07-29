@@ -1,5 +1,19 @@
 [
   {
+    "name": "AI Capabilities and Limitations",
+    "issuer": "Anthropic",
+    "date": "Jul 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
+    "url": "https://verify.skilljar.com/c/233vo2s5vrjh"
+  },
+  {
+    "name": "AI Fluency for Builders",
+    "issuer": "Anthropic",
+    "date": "Jul 2026",
+    "logo": "/images/certs/anthropicresearch_logo.jpg",
+    "url": "https://verify.skilljar.com/c/rs4kpbkskrhs"
+  },
+  {
     "name": "Introduction to agent skills",
     "issuer": "Anthropic",
     "date": "Jul 2026",

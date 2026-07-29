@@ -25,7 +25,7 @@
     },
     "SKILLS": {
       "TITLE": "Expertise",
-      "LIST": ["Agentic development", ".NET Core", "C#", "ASP.NET", "Blazor", "TypeScript", "Angular", "React", "Terraform", "Tailwind CSS", "SCSS"]
+      "LIST": ["Generative AI", "Agentic AI", ".NET Core", "C#", "ASP.NET", "Blazor", "TypeScript", "Angular", "React", "Terraform", "Tailwind CSS", "SCSS"]
     }
   },
   "CONTACT": {
