@@ -6,14 +6,18 @@
   transform: translateY(1rem);
 }
 
-.cert-group[open] .cert-chevron {
+.cert-chevron {
+  transition: transform 0.3s ease;
+}
+
+.cert-group.is-open .cert-chevron {
   transform: rotate(180deg);
 }
 
-summary::-webkit-details-marker {
-  display: none;
+.cert-group-body {
+  border-top-color: transparent;
 }
 
-summary::marker {
-  display: none;
+.cert-group.is-open .cert-group-body {
+  border-top-color: inherit;
 }
